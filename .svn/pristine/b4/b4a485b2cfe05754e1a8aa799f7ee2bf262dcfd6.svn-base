@@ -1,0 +1,238 @@
+<?php
+	require_once "jssdk.php";
+	$jssdk = new JSSDK("wx4d45062c36bc4237", "1e43a91bbf444f8df64e4998b9323dbd");
+	$signPackage = $jssdk->GetSignPackage();
+?>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title>斯凯奇</title>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="dist/css/swiper.min.css" />
+		<link rel="stylesheet" href="lib/animate.min.css" />
+		<link rel="stylesheet" href="css/shoe.css" />
+	</head>
+	<body>
+		<div class="swiper-container">
+		  <div class="swiper-wrapper">
+		  	<!--第一页-->
+		    <div class="swiper-slide swiper-slide1">
+		    	<figure class="f1-1 ani" swiper-animate-effect="tada" swiper-animate-duration="1s">
+		    		<img src="img/index_1.png"/>
+		    	</figure>
+		    	<figure class="f1-2 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s">
+		    		<img src="img/index_3.png">
+		    	</figure>
+		    	<figure class="f1-3 ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+		    		<img src="img/index_4.png"/>
+		    	</figure>
+		    </div>
+		    <!--第二页-->
+		    <div class="swiper-slide swiper-slide2">
+		    	<figure class="f2-1 ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s">
+		    		<img src="img/cover/cover1.png"/>
+		    	</figure>
+		    	<figure class="f2-2 ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s">
+		    		<img src="img/cover/cover2.png" />
+		    	</figure>
+		    	<figure class="f2-3 ani" swiper-animate-effect="zoomInUp" swiper-animate-duration="1s" swiper-animate-delay="1.5s">
+		    		<img src="img/cover/cover3.png" />
+		    	</figure>
+		    	<figure class="f2-4 ani" swiper-animate-effect="shake " swiper-animate-duration="1s">
+		    		<img src="img/cover/cover4.png" />
+		    	</figure>
+		    </div>
+		    <!--第三页-->
+		    <div class="swiper-slide swiper-slide3">
+		    	<figure class="f3-1 ani" swiper-animate-effect="shake" swiper-animate-duration="1s" swiper-animate-delay="1s">
+		    		<img src="img/cover2/cover1_5.png" />
+		    	</figure>
+		    	<figure class="f3-2 ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s">
+		    		<img src="img/cover2/cl_02.png" class="p1 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1.5s" swiper-animate-delay="1s"/>
+		    		<img src="img/cover2/cx_04.png" class="p2"/>
+		    	</figure>
+		    	<figure class="f3-3 ani" swiper-animate-effect="rollIn" swiper-animate-duration="1s" swiper-animate-delay="2.5s">
+		    		<img src="img/cover2/cover1_1.png" class="p1"/>
+		    		<img src="img/cover2/cover1_2.png" class="p2"/>
+		    		<img src="img/cover2/cover1_3.png" class="p3"/>
+		    		<img src="img/cover2/cover1_4.png" id="p4"/>
+		    	</figure>
+		    </div>
+		  	<!--第四页-->
+		  	 <div class="swiper-slide swiper-slide4">
+		    	<figure class="f4-1 ani" swiper-animate-effect="shake" swiper-animate-duration="1s" swiper-animate-delay="1s">
+		    		<img src="img/four/four1.png" class="p1"/>
+		    		<img src="img/four/four3_1.png" class="p2" />
+		    	</figure>
+		    	<figure class="f4-2 ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s">
+		    		<img src="img/four/four2.png" class="p1"/>
+		    		<img src="img/four/four2_1.png" class="p2" />
+		    	</figure>
+		    	<figure class="f4-3 ani" swiper-animate-effect="rollIn" swiper-animate-duration="1s">
+		    		<img src="img/four/four5.png" />
+		    	</figure>
+		    </div>
+		    <!--第五页-->
+		    <div class="swiper-slide swiper-slide5">
+		    	<figure class="f5-1 ani" swiper-animate-effect="shake" swiper-animate-duration="1s" swiper-animate-delay="1s">
+		    		<img src="img/five/five5.png" class="p1"/>
+		    		<img src="img/five/five3.png" class="p2" />
+		    	</figure>
+		    	<figure class="f5-2 ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s">
+		    		<img src="img/five/five4.png" class="p1"/>
+		    		<img src="img/five/five2.png" class="p2" />
+		    	</figure>
+		    	<figure class="f5-3 ani" swiper-animate-effect="rollIn" swiper-animate-duration="1s">
+		    		<img src="img/five/five1.png" />
+		    	</figure>
+		    </div>
+		    <!--第六页-->
+		    <div class="swiper-slide swiper-slide6">
+		    	<figure class="f6-1 ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s">
+		    		<img src="img/six/six4.png" class="p1"/>
+		    		<img src="img/six/six2.png" class="p2" />
+		    	</figure>
+		    	<figure class="f6-2 ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay="1s">
+		    		<img src="img/six/six3.png" class="p1"/>
+		    		<img src="img/six/six1.png" class="p2" />
+		    	</figure>
+		    	<figure class="f6-3 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s" swiper-animate-delay="2s">
+		    		<img src="img/six/six5.png" />
+		    	</figure>
+		    </div>
+		    <!--第七页-->
+		    <div class="swiper-slide swiper-slide7">
+		    	<figure class="f7-1 ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s">
+		    		<img src="img/seven/seven4.png" class="p1"/>
+		    		<img src="img/seven/seven2.png" class="p2" />
+		    	</figure>
+		    	<figure class="f7-2 ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay="1s">
+		    		<img src="img/seven/seven3.png" class="p1"/>
+		    		<img src="img/seven/seven1.png" class="p2" />
+		    	</figure>
+		    	<figure class="f7-3 ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="2s">
+		    		<img src="img/seven/seven5.png" />
+		    	</figure>
+		    </div>
+		    <!--第八页-->
+		    <div class="swiper-slide swiper-slide8">
+		    	<figure class="f8-1 ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s"  swiper-animate-delay="1s">
+		    		<img src="img/eight/eight4.png" class="p1"/>
+		    		<img src="img/eight/eight2.png" class="p2" />
+		    	</figure>
+		    	<figure class="f8-2 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s">
+		    		<img src="img/eight/eight6.png"  class="p1"/>
+		    	</figure>
+		    	<figure class="f8-3 ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay="2s">
+		    		<img src="img/eight/eight3.png" class="p1"/>
+		    		<img src="img/eight/eight1.png" class="p2" />
+		    	</figure>
+		    </div>
+		    <!--第九页-->
+		    <div class="swiper-slide swiper-slide9">
+		    	<figure class="f9-1 ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s"  swiper-animate-delay="1s">
+		    		<img src="img/nine/nine3.png" />
+		    	</figure>
+		    	<figure class="f9-2 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s">
+		    		<img src="img/nine/nine4.png" class="p1"/>
+		    	</figure>
+		    	<figure class="f9-3 ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay="2s">
+		    		<img src="img/nine/nine5.png" class="p1"/>
+		    	</figure>
+		    	<figure class="f9-4 ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay="2s">
+		    		<img src="img/nine/nine1.png" class="p1" />
+		    		<img src="img/nine/nine2.png" class="p2" />
+		    	</figure>
+		    </div>
+		 	<!--第十页-->
+		 	<div class="swiper-slide swiper-slide10">
+		    	<figure class="f10-1 ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s"  swiper-animate-delay="1s">
+		    		<img src="img/ten/ten4.png" />
+		    	</figure>
+		    	<figure class="f10-2 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s">
+		    		<img src="img/ten/ten1.png" class="p1"/>
+		    	</figure>
+		    	<figure class="f10-3 ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay="2s">
+		    		<img src="img/ten/ten5.png" class="p1"/>
+		    	</figure>
+		    	<figure class="f10-4 ani" swiper-animate-effect="bounceInUp" swiper-animate-duration="1s" swiper-animate-delay="2s">
+		    		<img src="img/ten/ten2.png" class="p1" />
+		    		<img src="img/ten/ten3.png" class="p2" />
+		    	</figure>
+		    </div>
+		    <!--第十一页-->
+		    <div class="swiper-slide swiper-slide11">
+		    	<figure class="f11-1 ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s"  swiper-animate-delay="1s">
+		    		<img src="img/enleve/enleve4.png" class="p1"/>
+		    	</figure>
+		    	<figure class="f11-2 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s">
+		    		<img src="img/enleve/enleve2.png" class="p1"/>
+		    	</figure>
+		    	<figure class="f11-3 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s">
+		    		<img src="img/enleve/enleve6.png" class="p1"/>
+		    		<img src="img/enleve/enleve5.png" class="p2"/>
+		    	</figure>
+		    </div>
+		    <!--十二页-->
+		    <div class="swiper-slide swiper-slide12">
+		    	<figure class="f12-1 ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="1s">
+		    		<img src="img/enleve/enleve4.png" class="p1"/>
+		    	</figure>
+		    	<figure class="f12-2 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s"  swiper-animate-delay="2s">
+		    		<img src="img/twle/code_03.png" class="p1" id="code"/>
+		    	</figure>
+		    	<figure class="f12-3 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s">
+		    		<img src="img/twle/twle1.png" class="p2"/>
+		    	</figure>
+		    </div>
+		    <!--十三页-->
+		    <div class="swiper-slide swiper-slide13">
+		    	<figure class="f13-1 ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="1s" swiper-animate-delay="1s">
+		    		<img src="img/threety/threety5.png" class="p1"/>
+		    	</figure>
+		    	<figure class="f13-2 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s"  swiper-animate-delay="2s">
+		    		<img src="img/threety/threety4.png" class="p1"/>
+		    		<img src="img/threety/threety3.png" class="p2"/>
+		    	</figure>
+		    	<figure class="f13-3 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1s">
+		    		<img src="img/threety/threety2.png" class="p1"/>
+		    		<img src="img/threety/threety1.png" class="p2"/>
+		    		<img src="img/threety/threety6.png" class="p3" />
+		    	</figure>
+		    </div>
+		  </div>
+		</div>
+		<script type="text/javascript" src="js/hammer.min.js" ></script>
+		<script type="text/javascript" src="lib/zepto.min.js" ></script>
+		<script type="text/javascript" src="lib/swiper.animate1.0.2.min.js" ></script>
+		<script type="text/javascript" src="dist/js/swiper.jquery.min.js" ></script>
+		<script type="text/javascript" src="js/shoe.js" ></script>
+		<!--引入微信的文件-->
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script>
+			/*通过config接口注入权限验证配置*/
+			wx.config({
+			    debug: true,
+			    appId: '<?php echo $signPackage["appId"];?>',
+			    timestamp: <?php echo $signPackage["timestamp"];?>,
+			    nonceStr: '<?php echo $signPackage["nonceStr"];?>',
+			    signature: '<?php echo $signPackage["signature"];?>',
+			    jsApiList: [
+			    'scanQRCode'
+			    ] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+			});
+			$("#code").on('longTap',function(){
+				console.log(1111)
+				wx.scanQRCode({
+				    needResult: 0, // 默认为0，扫描结果由微信处理，1则直接返回扫描结果，
+				    scanType: ["qrCode","barCode"], // 可以指定扫二维码还是一维码，默认二者都有
+				    success: function (res) {
+				    var result = res.resultStr; // 当needResult 为 1 时，扫码返回的结果
+					}
+				});
+			});
+		</script>
+	</body>
+</html>
